@@ -18,13 +18,13 @@
     <div class="navbar">
       <img src="Logo.png" alt="Logo" />
       <ul>
-        <li class="button" > <a href=""> <button>Sign Up</button></a>
-         <a href=""> <button>Sign In</button></a>
+        <li class="button" > <a href="/Sign Up/signup.html" target="_blank" > <button>Sign Up</button></a>
+         <a href="Log in/login.html"> <button>Sign In</button></a>
         </li>        
         <li><span class="search" ><i class="fa-solid fa-magnifying-glass" title="Search" ></i></li>
         <li><span><i class="fa-regular fa-address-book" title="contact" ></i></span></li>
         <li><span><i class="fa-solid fa-plane-departure" title="Trips" ></i></span></li>
-        <li><span><i class="fa-solid fa-ticket" title="Reservation" ></i></span></li>        <li><span><i class="fa-solid fa-house" title="Home" ></i></span></li>
+        <li><span><i class="fa-solid fa-ticket" title="Reservation" ></i></span></li>        <li><span><i class="fa-solid fa-house" title="Home" onclick="myFunction1()" ></i></span></li>
       </ul>
     </div>
     <div class="row">
@@ -36,7 +36,7 @@
           lose your Adventures, for Reservation contact one of our consulars the
           will respond to you ASAP
         </p>
-        <button>Sign Up</button>
+        <button onclick="myFunction()">Sign Up</button>
       </div>
       <div class="image">
         <div class="pic">
@@ -44,8 +44,10 @@
         </div>
       </div>
     </div>
-    <div class="bottom">
-
-    </div>
+    <script>
+      function myFunction(){
+        open("/Sign Up/signup.html")
+      }
+    </script>
   </body>
 </html>
